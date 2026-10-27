@@ -445,3 +445,12 @@ input,textarea{cursor:text!important}
 .dagger-glow{position:fixed;left:0;top:0;width:28px;height:28px;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(255,35,125,.55),rgba(255,35,125,0) 70%);opacity:0;transition:opacity .3s;mix-blend-mode:screen}
 .dagger-glow.over{animation:daggerShimmer 1.1s linear infinite}
 @keyframes daggerShimmer{0%{filter:hue-rotate(0) brightness(1.1)}50%{filter:hue-rotate(-40deg) brightness(1.6)}100%{filter:hue-rotate(0) brightness(1.1)}}
+
+/* картинки без обрезки: всегда 2:3, как сами арты */
+.collage-card .artwork{aspect-ratio:2/3!important;height:auto!important}
+.detail-art img{object-fit:contain!important;background:transparent}
+.detail-visual{overflow:hidden}
+.detail-visual::before{content:"";position:absolute;inset:0;background:var(--bg,none) center/cover no-repeat;filter:blur(26px) brightness(.4) saturate(1.2);transform:scale(1.2)}
+.detail-art{z-index:1;background:transparent!important}
+.detail-serial,.detail-image-name{z-index:2}
+.image-cross{display:none!important}
