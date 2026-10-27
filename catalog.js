@@ -1,4 +1,4 @@
-/* Название видно на карточке; keys — ключи записи в лорбуке, первый главный. */
+/* Название видно на карточке; keys — ключи записи (первый главный); lorebook — в каком лорбуке лежит запись. */
 window.WARDROBE_CATALOG = [
   {
     "id": "k001",
@@ -8,6 +8,7 @@ window.WARDROBE_CATALOG = [
       "Винный Устав",
       "к001"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Деловое",
     "tags": [
       "Бордо",
@@ -25,6 +26,7 @@ window.WARDROBE_CATALOG = [
       "Ночная Вендетта",
       "к002"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Нуар",
     "tags": [
       "Кожа",
@@ -43,6 +45,7 @@ window.WARDROBE_CATALOG = [
       "Чёрная Донна",
       "к003"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Мафия",
     "tags": [
       "Чёрный",
@@ -62,6 +65,7 @@ window.WARDROBE_CATALOG = [
       "Омерта",
       "к004"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Мафия",
     "tags": [
       "Бордо",
@@ -81,6 +85,7 @@ window.WARDROBE_CATALOG = [
       "Жало Скорпиона",
       "к005"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Вечернее",
     "tags": [
       "Чёрный",
@@ -100,6 +105,7 @@ window.WARDROBE_CATALOG = [
       "Алая Изнанка",
       "к006"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Вечернее",
     "tags": [
       "Чёрный",
@@ -119,6 +125,7 @@ window.WARDROBE_CATALOG = [
       "Вдова с Кинжалом",
       "к007"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Готика",
     "tags": [
       "Чёрный",
@@ -138,6 +145,7 @@ window.WARDROBE_CATALOG = [
       "Крест и Кожа",
       "к008"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Клубное",
     "tags": [
       "Чёрный",
@@ -157,6 +165,7 @@ window.WARDROBE_CATALOG = [
       "Святая Грешница",
       "к009"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Мафия",
     "tags": [
       "Чёрный",
@@ -176,6 +185,7 @@ window.WARDROBE_CATALOG = [
       "Кружевной Грех",
       "к010"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Клубное",
     "tags": [
       "Чёрный",
@@ -195,6 +205,7 @@ window.WARDROBE_CATALOG = [
       "Полночное Солнце",
       "к011"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Клубное",
     "tags": [
       "Тёмно-синий",
@@ -214,6 +225,7 @@ window.WARDROBE_CATALOG = [
       "Алый Бунт",
       "к012"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Уличное",
     "tags": [
       "Красный",
@@ -233,6 +245,7 @@ window.WARDROBE_CATALOG = [
       "Красный Яд",
       "к013"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Вечернее",
     "tags": [
       "Красный",
@@ -252,6 +265,7 @@ window.WARDROBE_CATALOG = [
       "Багровая Жажда",
       "к014"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Готика",
     "tags": [
       "Вино",
@@ -271,6 +285,7 @@ window.WARDROBE_CATALOG = [
       "Пепел и Вино",
       "к015"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Готика",
     "tags": [
       "Вино",
@@ -290,6 +305,7 @@ window.WARDROBE_CATALOG = [
       "Бархатная Корона",
       "к016"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Вечернее",
     "tags": [
       "Слива",
@@ -309,6 +325,7 @@ window.WARDROBE_CATALOG = [
       "Шипы и Бархат",
       "к017"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Готика",
     "tags": [
       "Бордо",
@@ -328,6 +345,7 @@ window.WARDROBE_CATALOG = [
       "Вишнёвое Кружево",
       "к018"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Свидания",
     "tags": [
       "Бордо",
@@ -347,6 +365,7 @@ window.WARDROBE_CATALOG = [
       "Хрустальная Бабочка",
       "к019"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Свидания",
     "tags": [
       "Молочный",
@@ -366,6 +385,7 @@ window.WARDROBE_CATALOG = [
       "Гранатовый Шик",
       "к020"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Деловое",
     "tags": [
       "Вино",
@@ -385,6 +405,7 @@ window.WARDROBE_CATALOG = [
       "Леди Гангстер",
       "к021"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Нуар",
     "tags": [
       "Чёрный",
@@ -404,6 +425,7 @@ window.WARDROBE_CATALOG = [
       "Бордовая Тройка",
       "к022"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Деловое",
     "tags": [
       "Бордо",
@@ -423,6 +445,7 @@ window.WARDROBE_CATALOG = [
       "Атлас и Сливки",
       "к023"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Свидания",
     "tags": [
       "Бордо",
@@ -442,6 +465,7 @@ window.WARDROBE_CATALOG = [
       "Пепельная Тень",
       "к024"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Нуар",
     "tags": [
       "Графит",
@@ -461,6 +485,7 @@ window.WARDROBE_CATALOG = [
       "Багряная Метель",
       "к025"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Вечернее",
     "tags": [
       "Бордо",
@@ -480,6 +505,7 @@ window.WARDROBE_CATALOG = [
       "Ржавое Сердце",
       "к026"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Клубное",
     "tags": [
       "Ржавый",
@@ -499,6 +525,7 @@ window.WARDROBE_CATALOG = [
       "Изумрудная Сталь",
       "к027"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Клубное",
     "tags": [
       "Изумруд",
@@ -518,6 +545,7 @@ window.WARDROBE_CATALOG = [
       "Пастораль",
       "к028"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Повседневное",
     "tags": [
       "Шёлк",
@@ -537,6 +565,7 @@ window.WARDROBE_CATALOG = [
       "Пиджак на Кружево",
       "к029"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Клубное",
     "tags": [
       "Чёрный",
@@ -556,6 +585,7 @@ window.WARDROBE_CATALOG = [
       "Холодный Графит",
       "к030"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Повседневное",
     "tags": [
       "Графит",
@@ -575,6 +605,7 @@ window.WARDROBE_CATALOG = [
       "Осенний Бордо",
       "к031"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Повседневное",
     "tags": [
       "Бордо",
@@ -594,6 +625,7 @@ window.WARDROBE_CATALOG = [
       "Парижский Тренч",
       "к032"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Повседневное",
     "tags": [
       "Бордо",
@@ -613,6 +645,7 @@ window.WARDROBE_CATALOG = [
       "Леди в Перчатках",
       "к033"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Повседневное",
     "tags": [
       "Бордо",
@@ -632,6 +665,7 @@ window.WARDROBE_CATALOG = [
       "Звёздный Траур",
       "к034"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Готика",
     "tags": [
       "Чёрный",
@@ -651,6 +685,7 @@ window.WARDROBE_CATALOG = [
       "Книжная Ведьма",
       "к035"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Тёмная академия",
     "tags": [
       "Свитер",
@@ -670,6 +705,7 @@ window.WARDROBE_CATALOG = [
       "Клетчатая Ересь",
       "к036"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Тёмная академия",
     "tags": [
       "Бордо",
@@ -689,6 +725,7 @@ window.WARDROBE_CATALOG = [
       "Бронзовый Мотылёк",
       "к037"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Тёмная академия",
     "tags": [
       "Клетка",
@@ -708,6 +745,7 @@ window.WARDROBE_CATALOG = [
       "Тёмная Энтомология",
       "к038"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Тёмная академия",
     "tags": [
       "Чёрный",
@@ -727,6 +765,7 @@ window.WARDROBE_CATALOG = [
       "Чёрный Регламент",
       "к039"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Тёмная академия",
     "tags": [
       "Чёрный",
@@ -746,6 +785,7 @@ window.WARDROBE_CATALOG = [
       "Алый Берет",
       "к040"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Свидания",
     "tags": [
       "Алый",
@@ -765,6 +805,7 @@ window.WARDROBE_CATALOG = [
       "Твидовая Наследница",
       "к041"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Повседневное",
     "tags": [
       "Молочный",
@@ -784,6 +825,7 @@ window.WARDROBE_CATALOG = [
       "Бордовый Бант",
       "к042"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Вечернее",
     "tags": [
       "Бордо",
@@ -803,6 +845,7 @@ window.WARDROBE_CATALOG = [
       "Вельветовая Кукла",
       "к043"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Свидания",
     "tags": [
       "Бордо",
@@ -822,6 +865,7 @@ window.WARDROBE_CATALOG = [
       "Сердечко и Тренч",
       "к044"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Повседневное",
     "tags": [
       "Бордо",
@@ -841,6 +885,7 @@ window.WARDROBE_CATALOG = [
       "Бордо и Крем",
       "к045"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Повседневное",
     "tags": [
       "Бордо",
@@ -860,6 +905,7 @@ window.WARDROBE_CATALOG = [
       "Чёрный Монолит",
       "к046"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Нуар",
     "tags": [
       "Чёрный",
@@ -879,6 +925,7 @@ window.WARDROBE_CATALOG = [
       "Красный Гипноз",
       "к047"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Мафия",
     "tags": [
       "Алый",
@@ -898,6 +945,7 @@ window.WARDROBE_CATALOG = [
       "Кружевной Кабинет",
       "к048"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Деловое",
     "tags": [
       "Молочный",
@@ -917,6 +965,7 @@ window.WARDROBE_CATALOG = [
       "Платиновая Леди",
       "к049"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Повседневное",
     "tags": [
       "Серый",
@@ -936,6 +985,7 @@ window.WARDROBE_CATALOG = [
       "Пепельный Бранч",
       "к050"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Повседневное",
     "tags": [
       "Серый",
@@ -955,6 +1005,7 @@ window.WARDROBE_CATALOG = [
       "Нейлон и Шерсть",
       "к051"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Деловое",
     "tags": [
       "Серый",
@@ -974,6 +1025,7 @@ window.WARDROBE_CATALOG = [
       "Кровь на Снегу",
       "к052"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Вечернее",
     "tags": [
       "Белый",
@@ -993,6 +1045,7 @@ window.WARDROBE_CATALOG = [
       "Меховая Дива",
       "к053"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Вечернее",
     "tags": [
       "Бордо",
@@ -1012,6 +1065,7 @@ window.WARDROBE_CATALOG = [
       "Цветочная Шнуровка",
       "к054"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Свидания",
     "tags": [
       "Алый",
@@ -1031,6 +1085,7 @@ window.WARDROBE_CATALOG = [
       "Траурный Сад",
       "к055"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Готика",
     "tags": [
       "Чёрный",
@@ -1050,6 +1105,7 @@ window.WARDROBE_CATALOG = [
       "Ночная Хищница",
       "к056"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Готика",
     "tags": [
       "Чёрный",
@@ -1069,6 +1125,7 @@ window.WARDROBE_CATALOG = [
       "Ключ от Склепа",
       "к057"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Готика",
     "tags": [
       "Бордо",
@@ -1088,6 +1145,7 @@ window.WARDROBE_CATALOG = [
       "Полночная Графиня",
       "к058"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Вечернее",
     "tags": [
       "Чёрный",
@@ -1107,6 +1165,7 @@ window.WARDROBE_CATALOG = [
       "Цепи Мадам",
       "к059"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Вечернее",
     "tags": [
       "Чёрный",
@@ -1126,6 +1185,7 @@ window.WARDROBE_CATALOG = [
       "Звёздный Атлас",
       "к060"
     ],
+    "lorebook": "Тёмный Гардероб",
     "category": "Вечернее",
     "tags": [
       "Чёрный",

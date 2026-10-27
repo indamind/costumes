@@ -454,3 +454,10 @@ input,textarea{cursor:text!important}
 .detail-art{z-index:1;background:transparent!important}
 .detail-serial,.detail-image-name{z-index:2}
 .image-cross{display:none!important}
+
+/* лорбук */
+.card-actions .card-lb{margin:7px 0 0!important;color:#a1426e!important;letter-spacing:1px}
+.lb-note{display:flex;align-items:center;gap:7px;color:#e3b5cb!important;font-family:var(--mono);font-size:10px!important;letter-spacing:.5px}
+.lb-note .horns{width:13px;height:13px}
+.lb-filters{margin-top:10px;align-items:center}
+.lb-label{font-family:var(--mono);font-size:8px;letter-spacing:2px;color:#847588;margin-right:6px}
