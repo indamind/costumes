@@ -461,3 +461,12 @@ input,textarea{cursor:text!important}
 .lb-note .horns{width:13px;height:13px}
 .lb-filters{margin-top:10px;align-items:center}
 .lb-label{font-family:var(--mono);font-size:8px;letter-spacing:2px;color:#847588;margin-right:6px}
+
+/* значок лорбука в правом верхнем углу картинки */
+.artwork{position:relative}
+.custom-art img.lb-badge{position:absolute;top:4%;right:4%;left:auto;width:19%!important;height:auto!important;object-fit:contain!important;background:none!important;pointer-events:none;z-index:2;filter:drop-shadow(0 3px 8px rgba(0,0,0,.75)) drop-shadow(0 0 10px rgba(255,35,125,.18))}
+.detail-art img.lb-badge{width:15%!important;top:3%;right:4%}
+.collage-card .custom-art img.lb-badge{width:17%!important}
+.edit-item .lb-badge,.upload-preview .lb-badge{display:none}
+.detail-visual .detail-art{position:absolute!important;inset:auto!important;top:0!important;bottom:0!important;left:50%!important;right:auto!important;height:100%!important;width:auto!important;aspect-ratio:2/3!important;max-width:100%;transform:translateX(-50%)}
+.detail-visual .detail-art img:not(.lb-badge){object-fit:cover!important}
