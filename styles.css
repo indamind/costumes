@@ -387,3 +387,5 @@ dialog{width:calc(100% - 24px);max-height:94dvh}
 }
 @media(max-width:560px){.editorial-copy p br:nth-child(2){display:initial}
 }
+
+.key-list{display:flex;flex-wrap:wrap;gap:8px}
