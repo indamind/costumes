@@ -417,3 +417,31 @@ dialog{width:calc(100% - 24px);max-height:94dvh}
 @media(min-width:1000px){ .catalog-grid{grid-template-columns:repeat(4,minmax(0,1fr))} }
 @media(min-width:1280px){ .catalog-grid{grid-template-columns:repeat(5,minmax(0,1fr))} }
 .detail-actions{grid-template-columns:1fr!important}.detail-actions .primary{width:100%}
+
+/* шапка: коллаж левее, чтобы правая карточка не обрезалась */
+@media(min-width:1151px){.editorial-collage{margin-right:40px}}
+@media(min-width:1700px){.editorial-collage{margin-right:70px}}
+
+/* печать «один ключ» мигает и обводится по кругу при наведении на костюмы */
+.red-stamp::before{content:"";position:absolute;inset:-9px;border-radius:50%;background:conic-gradient(from 0deg,transparent 0 62%,#ff237d 82%,#ffd1e3 90%,transparent 100%);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px));mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px));opacity:0;transition:opacity .3s;pointer-events:none}
+.red-stamp{transition:box-shadow .3s,border-color .3s}
+.editorial-collage.is-hot .red-stamp{animation:stampBlink .55s ease-in-out infinite alternate}
+.editorial-collage.is-hot .red-stamp::before{opacity:1;animation:stampSpin 1.1s linear infinite}
+.editorial-collage.is-hot .red-stamp span,.editorial-collage.is-hot .red-stamp .horns{animation:stampFlicker 1.1s steps(2,end) infinite}
+@keyframes stampSpin{to{transform:rotate(360deg)}}
+@keyframes stampBlink{from{box-shadow:0 0 0 #ff237d00;border-color:#dd2767}to{box-shadow:0 0 30px #ff237daa,inset 0 0 16px #ff237d55;border-color:#ff8ab8}}
+@keyframes stampFlicker{0%,100%{opacity:1}50%{opacity:.55}}
+@media(prefers-reduced-motion:reduce){.editorial-collage.is-hot .red-stamp,.editorial-collage.is-hot .red-stamp::before,.editorial-collage.is-hot .red-stamp span,.editorial-collage.is-hot .red-stamp .horns{animation:none}}
+
+/* ссылка на бота в верхней строке */
+.hero-topline a{color:inherit;text-decoration:none;transition:color .2s}
+.hero-topline a:hover{color:var(--accent)}
+
+/* курсор-кинжал */
+html,body{cursor:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M1.5%201.5%20L15%2010.6%20L10.6%2015%20Z%22%20fill%3D%22%23f6e8ef%22%20stroke%3D%22%230a090d%22%20stroke-width%3D%221%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M2.2%202.2%20L12.8%2012.8%22%20stroke%3D%22%23b8a4ae%22%20stroke-width%3D%22.7%22%2F%3E%3Cpath%20d%3D%22M17.8%209.4%20L9.4%2017.8%22%20stroke%3D%22%230a090d%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M17.8%209.4%20L9.4%2017.8%22%20stroke%3D%22%23ff2a7f%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M14.2%2014.2%20L20.6%2020.6%22%20stroke%3D%22%230a090d%22%20stroke-width%3D%224.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M14.2%2014.2%20L20.6%2020.6%22%20stroke%3D%22%234a0c24%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Ccircle%20cx%3D%2222.6%22%20cy%3D%2222.6%22%20r%3D%222.9%22%20fill%3D%22%23ff2a7f%22%20stroke%3D%22%230a090d%22%20stroke-width%3D%221%22%2F%3E%3Ccircle%20cx%3D%2222.6%22%20cy%3D%2222.6%22%20r%3D%221.1%22%20fill%3D%22%23ffd1e3%22%2F%3E%3C%2Fsvg%3E") 2 2,auto}
+a,button,[role="button"],label,summary,select,.collage-card,.art-button,.filter,.copy-btn,[data-copy],[data-copykey],[data-item],[data-help],.close-dialog{cursor:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cdefs%3E%3CradialGradient%20id%3D%22g%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ff2a7f%22%20stop-opacity%3D%22.9%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ff2a7f%22%20stop-opacity%3D%220%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3Ccircle%20cx%3D%2222.6%22%20cy%3D%2222.6%22%20r%3D%228%22%20fill%3D%22url%28%23g%29%22%2F%3E%3Cpath%20d%3D%22M1.5%201.5%20L15%2010.6%20L10.6%2015%20Z%22%20fill%3D%22%23ffd1e3%22%20stroke%3D%22%230a090d%22%20stroke-width%3D%221%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M2.2%202.2%20L12.8%2012.8%22%20stroke%3D%22%23b8a4ae%22%20stroke-width%3D%22.7%22%2F%3E%3Cpath%20d%3D%22M17.8%209.4%20L9.4%2017.8%22%20stroke%3D%22%230a090d%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M17.8%209.4%20L9.4%2017.8%22%20stroke%3D%22%23ff2a7f%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M14.2%2014.2%20L20.6%2020.6%22%20stroke%3D%22%230a090d%22%20stroke-width%3D%224.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M14.2%2014.2%20L20.6%2020.6%22%20stroke%3D%22%238a1240%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Ccircle%20cx%3D%2222.6%22%20cy%3D%2222.6%22%20r%3D%222.9%22%20fill%3D%22%23ff2a7f%22%20stroke%3D%22%230a090d%22%20stroke-width%3D%221%22%2F%3E%3Ccircle%20cx%3D%2222.6%22%20cy%3D%2222.6%22%20r%3D%221.1%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E") 2 2,pointer!important}
+input,textarea{cursor:text!important}
+@media(hover:none),(pointer:coarse){html,body,a,button,[role="button"],label,select,.collage-card,.art-button,.filter{cursor:auto!important}}
+.dagger-glow{position:fixed;left:0;top:0;width:28px;height:28px;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(255,35,125,.55),rgba(255,35,125,0) 70%);opacity:0;transition:opacity .3s;mix-blend-mode:screen}
+.dagger-glow.over{animation:daggerShimmer 1.1s linear infinite}
+@keyframes daggerShimmer{0%{filter:hue-rotate(0) brightness(1.1)}50%{filter:hue-rotate(-40deg) brightness(1.6)}100%{filter:hue-rotate(0) brightness(1.1)}}

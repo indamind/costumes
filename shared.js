@@ -8,3 +8,11 @@ const icons={copy:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" st
 function notify(message){let t=document.getElementById('toast');if(!t){t=document.createElement('div');t.id='toast';t.setAttribute('role','status');document.body.append(t);}t.textContent=message;t.classList.add('visible');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.classList.remove('visible'),3200);}
 async function copyText(value){try{await navigator.clipboard.writeText(value);return true;}catch{const t=document.createElement('textarea');t.value=value;t.style.position='fixed';t.style.opacity='0';document.body.append(t);t.select();let ok=false;try{ok=document.execCommand('copy');}catch{}t.remove();return ok;}}
 function downloadFile(name,text,type='text/javascript;charset=utf-8'){const url=URL.createObjectURL(new Blob([text],{type}));const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+
+/* розовое свечение за курсором-кинжалом */
+(function(){const mm=window.matchMedia;if(mm&&(mm('(hover: none)').matches||mm('(pointer: coarse)').matches||mm('(prefers-reduced-motion: reduce)').matches))return;
+function start(){const g=document.createElement('div');g.className='dagger-glow';document.body.append(g);let mx=0,my=0,gx=0,gy=0,shown=false;
+addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;if(!shown){shown=true;g.style.opacity='1';}const t=e.target&&e.target.closest?e.target.closest('a,button,[role="button"],label,[data-item]'):null;g.classList.toggle('over',!!t);});
+addEventListener('mouseout',e=>{if(!e.relatedTarget){g.style.opacity='0';shown=false;}});
+(function loop(){gx+=(mx-gx)*.18;gy+=(my-gy)*.18;g.style.left=(gx+4)+'px';g.style.top=(gy+4)+'px';requestAnimationFrame(loop);})();}
+if(document.body)start();else document.addEventListener('DOMContentLoaded',start);})();
